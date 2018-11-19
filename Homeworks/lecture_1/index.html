@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.fp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/mapping.fp.js"></script>
+    <script src="index.js"></script>  
+    <script src="ui.js"></script>  
+</head>
+<body>
+    <button id="calculate" onclick="runReport()">Run Report</button>
+    <table id="validOrders"></table>
+    <ul id="invalidOrders"></ul>
+</body>
+</html>
+<style>
+    table {
+        border: 1px solid black;
+    }
+    td {
+        padding: 5px 10px;
+    }
+    td:not(:last-child) {
+        border-right: 1px solid black;
+    }
+    button#calculate {
+        margin-bottom: 20px;
+    }
+</style>
